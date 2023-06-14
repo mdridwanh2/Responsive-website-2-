@@ -1,0 +1,581 @@
+/* common css starts here */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* common css ends here */
+
+
+
+
+
+/* navber starts here */
+
+.logo img{
+    width: 60px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header.sticky{
+    background-color: white;
+    padding: 10px 10%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu .active{
+    color: red;
+}
+
+.navmenu a{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: black;
+    z-index: 100001;
+    cursor: pointer;
+}
+
+/* navber ends here */
+
+
+
+
+
+
+
+/* banner section start here */
+section{
+    padding: 5% 10% ;
+}
+
+#main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/backgroun-image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    background-blend-mode: multiply;
+   
+}
+.main-text h5{
+    color: rgb(250, 4, 4);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.main-text h1{
+    color: rgb(0, 0, 0);
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text h1 span{
+    color: rgb(0, 0, 0);
+}
+
+.main-text p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid;
+    transition: all .42s ease;
+    padding: 5px 13px ;
+    border-radius: 3px;
+}
+.main-btn:hover{
+    background-color: #010102;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+.down-arrow .down i{
+    font-size: 25px;
+    color: #111;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 5px;
+}
+.down-arrow .down i:hover{
+    background-color: #000;
+    color: white;
+    transition: all .42s ease;
+}
+/* banner section ends here */
+
+
+
+
+
+ /* ********************************************** */
+ /* our trending Products starts here */
+/* ********************************************** */
+
+.center-text h2{
+    color: #000;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: all .40s ease-in;
+}
+.center-text h2:hover{
+    transform: scale(1.1);
+}
+
+.center-text span{
+    color: red;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+.row{
+    position: relative;
+    transition: all .40s ease-in;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s ease-in;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #131414a1;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: all .40s ease;
+    cursor: pointer;
+}
+.product-text h5:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(5, 185, 20);
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(97, 94, 94);
+
+}
+.heart-icon:hover{
+    color: red;
+}
+.ratting i{
+    color: #ffa600;
+    cursor: pointer;
+}
+.price h4{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight:500;
+}
+.price p{
+    color: #111;
+    font-weight: 600;
+}
+
+ /* ********************************************** */
+ /* our trending Products ends here */
+/* ********************************************** */
+
+
+
+
+
+
+
+
+
+/* ****************************************** */
+/* client-reviews starts here */
+/* ****************************************** */
+
+.client-reviews{
+    background-color: rgb(248, 248, 248);
+}
+.reviews{
+    text-align: center;
+}
+.client-reviews .reviews h3{
+    color: #000;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: all .40s ease-in;
+}
+.client-reviews .reviews h3:hover{
+    transform: scale(1.1);
+}
+
+.client-reviews .reviews img{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+.client-reviews .reviews p{
+    color: rgb(47, 48, 49);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.client-reviews .reviews h2{
+    color:#111;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+.client-reviews .reviews .ceo{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ****************************************** */
+/* client-reviews ends here */
+/* ****************************************** */
+
+
+
+
+
+
+
+
+/* **************************************** */
+/* update news section starts here */
+/* *************************************** */
+
+.up-center-text h2{
+    color: #000;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: all .40s ease-in;
+}
+.up-center-text h2:hover{
+    transform: scale(1.1);
+}
+
+.update-news .cart img{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all .40s ease-in;
+}
+
+.update-news .cart img:hover{
+    transform: scale(1.1);
+}
+
+
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+}
+.update-cart .cart h5{
+    color: gray;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.update-cart .cart h4{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.update-cart .cart p{
+    font-size: 16px;
+    color: rgb(92, 91, 91);
+    max-width: 380px;
+    margin-bottom: 12px;
+}
+.update-cart .cart h6{
+    color: #000000;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+
+
+
+/* **************************************** */
+/* update news section ends here */
+/* *************************************** */
+
+
+
+
+
+
+
+
+/* **************************************** */
+/* contact starts here */
+/* **************************************** */
+
+.contact .first-info img{
+    width: 80px;
+}
+
+.social-icon i{
+    color: rgb(51, 50, 50);
+    margin-right: 8px;
+    font-size: 18px;
+    transition: all .42s ease-in;
+}
+.social-icon i:hover{
+    transform: scale(1.1);
+}
+
+.contact{
+    background-color: rgb(242, 243, 243);
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 1rem;
+}
+.contact-info h4{
+    color: #111;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 18px 0;
+    transition: all .42s ease-in;
+}
+.contact-info h4:hover{
+    transform: scale(1.1);
+}
+
+.contact-info p{
+    color: rgb(51, 50, 50);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 7px;
+    cursor: pointer;
+    transition: all .42s ease-in;
+}
+
+.subscribe span{
+    color: rgb(51, 50, 50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 7px;
+}
+
+
+.contact-info p:hover{
+    color: red;
+    transform: scale(1.1);
+    margin-right: 10px;
+}
+
+
+/* **************************************** */
+/* contact ends here */
+/* **************************************** */
+
+
+
+
+.end-text{
+    background-color: #0e0c0c;
+    text-align: center;
+    padding: 15px 0;
+    color: rgb(245, 243, 243);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.end-text p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+
+
+/* ******************************************** */
+/* responsive code */
+/* **************************************** */
+
+
+/* @media screen and (max-width: 992px){
+    header{
+        padding: 10px 3%;
+        transition: 0.4s;
+    }
+
+    .main-text h1{
+        font-size: 50px;
+        transition: 0.4s;
+    }
+    .main-text p{
+        font-size: 18px;
+        transition: 0.4s;
+    }
+
+    .main-text a{
+        font-size: 15px;
+        transition: 0.4s;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(230, 228, 228, 0.945);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    
+    .navmenu a{
+        display: block;
+        margin: 8px 0;
+    }
+
+    .navmenu.open{
+        right: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .main-text h1{
+        font-size: 35px;
+        transition: 0.4s;
+    }
+    .main-text p{
+        font-size: 16px;
+        transition: 0.4s;
+    }
+    .main-text a{
+        font-size: 13px;
+        transition: 0.4s;
+    }
+}
+ */
